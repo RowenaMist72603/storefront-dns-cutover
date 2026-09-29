@@ -1,0 +1,22 @@
+{
+  "name": "storefront-dns-cutover",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --experimental-strip-types src/cutover_service.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test test/cutover_decision.test.ts"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=22.6"
+  },
+  "license": "MIT"
+}
